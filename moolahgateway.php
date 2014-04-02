@@ -25,14 +25,14 @@ function moolahgateway_link($params) {
         $code = '<form method="post" action="">
 			Select Coin <select name="guid">';
 		
-		if($params['Bitcoin'] != '') { $code .= '<option value="' . $params['Bitcoin'] . '">Bitcoin</option>';
-		if($params['Litecoin'] != '') { $code .= '<option value="' . $params['Litecoin'] . '">Litecoin</option>';
-		if($params['Dogecoin'] != '') { $code .= '<option value="' . $params['Dogecoin'] . '">Dogecoin</option>';
-		if($params['Vertcoin'] != '') { $code .= '<option value="' . $params['Vertcoin'] . '">Vertcoin</option>';
-		if($params['Auroracoin'] != '') { $code .= '<option value="' . $params['Auroracoin'] . '">Auroracoin</option>';
-		if($params['Mintcoin'] != '') { $code .= '<option value="' . $params['Mintcoin'] . '">Mintcoin</option>';
-		if($params['Darkcoin'] != '') { $code .= '<option value="' . $params['Darkcoin'] . '">Darkcoin</option>';
-		if($params['Maxcoin'] != '') { $code .= '<option value="' . $params['Maxcoin'] . '">Maxcoin</option>';
+		if($params['Bitcoin'] != '') { $code .= '<option value="' . $params['Bitcoin'] . '">Bitcoin</option>'; }
+		if($params['Litecoin'] != '') { $code .= '<option value="' . $params['Litecoin'] . '">Litecoin</option>'; }
+		if($params['Dogecoin'] != '') { $code .= '<option value="' . $params['Dogecoin'] . '">Dogecoin</option>'; }
+		if($params['Vertcoin'] != '') { $code .= '<option value="' . $params['Vertcoin'] . '">Vertcoin</option>'; }
+		if($params['Auroracoin'] != '') { $code .= '<option value="' . $params['Auroracoin'] . '">Auroracoin</option>'; }
+		if($params['Mintcoin'] != '') { $code .= '<option value="' . $params['Mintcoin'] . '">Mintcoin</option>'; }
+		if($params['Darkcoin'] != '') { $code .= '<option value="' . $params['Darkcoin'] . '">Darkcoin</option>'; }
+		if($params['Maxcoin'] != '') { $code .= '<option value="' . $params['Maxcoin'] . '">Maxcoin</option>'; }
 		
 		$code .= '</select>
 	<input type="hidden" name="select_guid" value="yes">
