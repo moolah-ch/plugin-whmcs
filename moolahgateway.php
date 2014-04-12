@@ -14,6 +14,7 @@ function moolahgateway_config() {
         "Mintcoin" => array("FriendlyName" => "Mintcoin", "Type" => "text", "Size" => "20", "Description" => "GUID"),
         "Darkcoin" => array("FriendlyName" => "Darkcoin", "Type" => "text", "Size" => "20", "Description" => "GUID"),
         "Maxcoin" => array("FriendlyName" => "Maxcoin", "Type" => "text", "Size" => "20", "Description" => "GUID"),
+        "Quarkcoin" => array("FriendlyName" => "Quarkcoin", "Type" => "text", "Size" => "20", "Description" => "GUID"),
         "testmode" => array("FriendlyName" => "Test Mode", "Type" => "yesno", "Description" => "Tick this to test",),
     );
     return $configarray;
@@ -33,6 +34,7 @@ function moolahgateway_link($params) {
 		if($params['Mintcoin'] != '') { $code .= '<option value="' . $params['Mintcoin'] . '">Mintcoin</option>'; }
 		if($params['Darkcoin'] != '') { $code .= '<option value="' . $params['Darkcoin'] . '">Darkcoin</option>'; }
 		if($params['Maxcoin'] != '') { $code .= '<option value="' . $params['Maxcoin'] . '">Maxcoin</option>'; }
+		if($params['Quarkcoin'] != '') { $code .= '<option value="' . $params['Quarkcoin'] . '">Quarkcoin</option>'; }
 		
 		$code .= '</select>
 	<input type="hidden" name="select_guid" value="yes">
